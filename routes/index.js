@@ -1,6 +1,6 @@
 const { Router } = require('express');
 const { SuccessResponseObject } = require('../common/http');
-const demo = require('./demo.route');
+//const demo = require('./demo.route');
 
 const request = require('request');
 const searchResultParser = require('./search_result_parser');
