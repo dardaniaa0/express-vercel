@@ -1,12 +1,13 @@
 const express = require('express');
 const helmet = require('helmet');
-const { ErrorResponseObject } = require('./common/http');
+//const { ErrorResponseObject } = require('./common/http');
 //const routes = require('./routes');
 
 const app = express();
 
+//const express = require('express');
+const request = require('request');
 const searchResultParser = require('./search_result_parser');
-
 
 app.get('/search', (endpointRequest, endpointResponse) => {
     let searchTerm = endpointRequest.query.term;
@@ -33,6 +34,6 @@ app.use(helmet());
 //app.use('/', routes);
 
 // default catch all handler
-app.all('*', (req, res) => res.status(404).json(new ErrorResponseObject('route not defined')));
+//app.all('*', (req, res) => res.status(404).json(new ErrorResponseObject('route not defined')));
 
 module.exports = app;
