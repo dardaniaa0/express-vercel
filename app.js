@@ -4,7 +4,7 @@ const express = require('express');
 //const routes = require('./routes');
 
 const app = express();
-const port = 3333;
+//const port = 3333;
 
 //const express = require('express');
 const request = require('request');
@@ -25,10 +25,6 @@ app.get('/search', (endpointRequest, endpointResponse) => {
 
         endpointResponse.json(endpointResponseData);
     });
-});
-
-app.listen(port, () => {
-    console.log(`Server listening on port: ${port}`);
 });
 
 //app.use(express.json({ limit: '50mb' }));
