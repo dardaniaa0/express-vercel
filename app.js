@@ -11,6 +11,6 @@ app.use(helmet());
 app.use('/', routes);
 
 // default catch all handler
-app.all('*', (req, res) => res.status(404).json(new ErrorResponseObject('route not defined')));
+//app.all('*', (req, res) => res.status(404).json(new ErrorResponseObject('route not defined')));
 
 module.exports = app;
