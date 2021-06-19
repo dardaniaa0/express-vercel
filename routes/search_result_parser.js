@@ -86,6 +86,7 @@ function parseArtworkUrl(resultItem) {
 function parsePodcastSearchResult(resultItem) {
     return {
         id: resultItem.collectionId,
+        trackId: resultItem.trackId,
         name: resultItem.collectionName,
         artwork: parseArtworkUrl(resultItem),
         genre: resultItem.primaryGenreName,
@@ -97,6 +98,7 @@ function parsePodcastSearchResult(resultItem) {
 function parseSoftwareSearchResult(resultItem) {
     return {
         id: resultItem.trackId,
+        trackId: resultItem.trackId,
         name: resultItem.trackName,
         artwork: parseArtworkUrl(resultItem),
         genre: resultItem.primaryGenreName,
@@ -108,6 +110,7 @@ function parseSoftwareSearchResult(resultItem) {
 function parseAudiobookSearchResult(resultItem) {
     return {
         id: resultItem.collectionId,
+        trackId: resultItem.trackId,
         name: resultItem.collectionName,
         artwork: parseArtworkUrl(resultItem),
         genre: resultItem.primaryGenreName,
@@ -119,6 +122,7 @@ function parseAudiobookSearchResult(resultItem) {
 function parseSongSearchResult(resultItem) {
     return {
         id: resultItem.trackId,
+        trackId: resultItem.trackId,
         name: resultItem.trackName,
         artwork: parseArtworkUrl(resultItem),
         genre: resultItem.primaryGenreName,
@@ -130,6 +134,7 @@ function parseSongSearchResult(resultItem) {
 function parseMovieSearchResult(resultItem) {
     return {
         id: resultItem.trackId,
+        trackId: resultItem.trackId,
         name: resultItem.trackName,
         artwork: parseArtworkUrl(resultItem),
         genre: resultItem.primaryGenreName,
@@ -141,6 +146,7 @@ function parseMovieSearchResult(resultItem) {
 function parseMusicVideoSearchResult(resultItem) {
     return {
         id: resultItem.trackId,
+        trackId: resultItem.trackId,
         name: resultItem.trackName,
         artwork: parseArtworkUrl(resultItem),
         genre: resultItem.primaryGenreName,
@@ -152,6 +158,7 @@ function parseMusicVideoSearchResult(resultItem) {
 function parseTVEpisodeSearchResult(resultItem) {
     return {
         id: resultItem.trackId,
+        trackId: resultItem.trackId,
         name: resultItem.trackName,
         artwork: parseArtworkUrl(resultItem),
         genre: resultItem.primaryGenreName,
@@ -163,6 +170,7 @@ function parseTVEpisodeSearchResult(resultItem) {
 function parseEbookSearchResult(resultItem) {
     return {
         id: resultItem.trackId,
+        trackId: resultItem.trackId,
         name: resultItem.trackName,
         artwork: parseArtworkUrl(resultItem),
         genre: resultItem.primaryGenreName,
