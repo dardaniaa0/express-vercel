@@ -86,7 +86,7 @@ function parseArtworkUrl(resultItem) {
 function parsePodcastSearchResult(resultItem) {
     return {
         id: resultItem.collectionId,
-        trackId: resultItem.trackId,
+        trackId: resultItem.collectionId,
         name: resultItem.collectionName,
         artwork: parseArtworkUrl(resultItem),
         genre: resultItem.primaryGenreName,
